@@ -1,0 +1,14 @@
+Problem 5 (3pt):
+(a) (1.5pt) Consider the array which has been partitioned by the first step of quicksort:
+1, 2, 4, 3, 6, 8, 7
+Which of these elements could have been the pivot? (list ALL possible options).
+Your answer + explanation:
+
+
+(b) (1.5 pt)  Suppose we always pick the last element as the pivot as we run quick sort.
+Give an example of a list that gives the worst case performance for quick sort.
+Your answer + explanation:
+
+
+// You may submit the answer to this question either via Github or
+// write down your solution on paper, take a photo at the end of the exam and upload to Canvas.

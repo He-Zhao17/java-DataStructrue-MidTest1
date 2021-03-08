@@ -1,0 +1,13 @@
+Problem 3 (3 pt) :
+Solve the following recurrence relation using the Repeated substitution.
+Show at least two substitutions, give the pattern,  give k for which we reach the base case and
+give the final answer. (Note: You may NOT use the Master theorem for this question).
+
+T(1) = C1
+T(n) = 9T(n/3)  + n
+
+Your answer with explanation:
+
+// You may submit the answer to this question either via Github or 
+// write down your solution on paper, take a photo at the end of the exam and upload to Canvas.
+
