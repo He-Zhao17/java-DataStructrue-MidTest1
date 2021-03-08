@@ -13,13 +13,35 @@ package problem4;
 // are the sizes of the two lists and takes advantages of the fact that the input lists are sorted.
 // Hint: you can modify the merge helper method to solve this problem.
 
+import java.util.Arrays;
+
 // The solution to this problem must be submitted to github.
 public class Problem4IntersectionOfSortedLists {
 
     public static int[] intersectionOfSortedArrays(int[] arr1, int[] arr2) {
         // FILL IN CODE
-        int[] res = new int[arr1.length]; // you can compute the actual number of common elements as you go,
+        int i = 0;
+        int j = 0;
+        int index = 0;
+        int[] result = new int[arr1.length + arr2.length];
+        while (i < arr1.length && j < arr2.length) {
+            if (arr1[i] > arr2[j]) {
+                j++;
+            }
+            if (arr1[i] < arr2[j]) {
+                i++;
+            }
+            if (arr1[i] == arr2[j]) {
+                result[index] = arr1[i];
+                i++;
+                j++;
+                index++;
+            }
+        }
+
+        int[] res = new int[index]; // you can compute the actual number of common elements as you go,
         // and later return the array of the correct length using copyOf method in class Arrays
+        res = Arrays.copyOf(result, index);
 
 
         return res;
