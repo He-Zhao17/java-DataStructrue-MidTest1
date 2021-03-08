@@ -28,6 +28,7 @@ public class LinkedList {
 		int count = 0;
 		while ((head != null) && (count < i - 1)) {
 			head = head.next();
+			count++;
 		}
 		if (head != null) {
 			int res = head.next().elem();
